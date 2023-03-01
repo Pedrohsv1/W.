@@ -62,6 +62,7 @@ p {
 .submenuitems a {
   padding: 1em;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .closebtn {
@@ -222,7 +223,6 @@ p {
   }
   
   .submenuitems a {
-
     padding: 1em;
     font-weight: 700;
   }
