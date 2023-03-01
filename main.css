@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; 
+}
+
+body {
+  font-size: 15px;
+}
+
+main {
+  margin: 4em 1em;
+}
+
+p {
+
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  padding: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submenu {
+  
+  padding: 1em;
+  background-color: white;
+  height: 100vh;
+  width: 70vw;
+  position: fixed;
+  top: 0;
+  left: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.inactive {
+  display: none;
+}
+
+.submenuitems {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1em;
+}
+.submenuitems a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.submenuitems a {
+  padding: 1em;
+  font-weight: 700;
+}
+
+.closebtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  margin-bottom: 4em;
+}
+
+.mainnews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+
+}
+
+.mainnews > div > div > h1 {
+  margin-block-end: 0.33em;
+  color: hsl(240, 100%, 5%);
+}
+
+.mainnews > div > div > p {
+  color:hsl(236, 13%, 42%);
+}
+
+.mainnews > div > div > button {
+  border: none;
+  padding: 1em;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  letter-spacing: 5px;
+  transition: background-color 200ms;
+}
+
+.mainnews > div > div > button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
+.mainnews > .image {
+  width: 100%;
+  height: 40vh;
+  background-position: center;
+  background-size: cover;
+  background-image: url("assets/images/image-web-3-mobile.jpg");
+}
+
+.new {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 2em;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.new > h2 {
+  color: hsl(35, 77%, 62%);
+}
+
+.new > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid white;
+  
+}
+
+.new > div:hover > h3{
+  color: hsl(35, 77%, 62%);
+}
+
+.new > div > p{
+  color: hsl(233, 8%, 79%);
+}
+
+.new > div > h3 {
+  color: white;
+  transition: color 200ms;
+}
+
+.topics {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.topicitem {
+  display: flex;
+}
+
+.topicimg {
+  width: 30%;
+}
+
+.topictext {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-left: 1em;
+}
+
+.topictext > h2 {
+  color: hsl(233, 8%, 79%);
+}
+
+.topictext > h3 {
+  color: hsl(240, 100%, 5%);
+  transition: color 200ms;
+}
+
+.topicitem:hover > div > h3 {
+  color: hsl(5, 85%, 63%);
+}
+
+@media (min-width: 1008px) {
+  .inactive {
+    display: flex;
+  }
+  #closearea, #menumobileimg {
+    display: none;
+  }
+  main{
+    margin-top: 0;
+  }
+  body {
+    margin: 2em 4em;
+  }
+  .menu {
+    width: 100%;
+    position: relative;
+  }
+  .submenu {
+    position: static;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+    top: 0;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+  }
+  .submenuitems {
+    
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1em;
+  }
+  .submenuitems a:hover {
+    color: hsl(5, 85%, 63%);
+  }
+  
+  .submenuitems a {
+
+    padding: 1em;
+    font-weight: 700;
+  }
+  .news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4em;
+    margin-bottom: 4em;
+  }
+  .mainnews {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+  }
+  .mainnews > div {
+    display: flex;
+  }
+  .mainnews > div > div > h1{
+    font-size: 40px;
+  }
+  .mainnews > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+  }
+  .mainnews > div > div > button {
+    width: 35%;
+    letter-spacing: 5px;
+  }
+  .mainnews > div > div > p {
+    font-size: larger;
+  }
+  .topics {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+  }
+  
+}
